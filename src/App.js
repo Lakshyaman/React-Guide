@@ -1,8 +1,8 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Expenses from "./components/Expenses";
+import Expenses from "./components/Expenses/Expenses";
 
-function App() {
+const App = () => {
   //A little more dynamic
   const expenses = [
     {
@@ -31,9 +31,11 @@ function App() {
     },
   ];
 
+  // return React.createElement('div', {}, React.createElement('h2', {}, 'Learn React'), React.createElement(Expenses, {expenses:expenses}))
+
   return (
     <div>
-      Learn React
+      <h2>Learn React</h2>
       <Expenses expenses={expenses}/>
     </div>
   );
